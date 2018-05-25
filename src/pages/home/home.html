@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Controle do carrinho
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div style="float: left; margin-top: 40px;">
+        <button ion-button style="padding: 40px; position: relative; width: 50px; border-radius: 50%;" (click)="presentConfirm();"><ion-icon ios="ios-bluetooth" md="md-bluetooth"></ion-icon></button>
+        <br><p style="font-size: 10px;">{{ dispCon }}</p> 
+        <button ion-button style="padding: 40px; position: relative; width: 50px; border-radius: 50%;" (click)="buzzer()"><ion-icon ios="ios-volume-up" md="md-volume-up"></ion-icon></button>
+    </div>
+    <div style="float: left; position: absolute; margin-left: 30%;">
+        <textarea id="console" style="padding-left: 10px; font-family: 'century gothic'; border-radius: 5px; background: #002893; color: white; font-size: 40px; resize: none;" disabled="true" cols="5" rows="1"> {{ rx }}</textarea>
+    </div>
+    <div id='joystick' style="position: relative; float: right; margin-right: 150px; margin-top: 150px;">
+        <div class="zone static"></div>
+    </div>
+
+    
+</ion-content>
